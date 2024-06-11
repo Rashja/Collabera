@@ -1,0 +1,145 @@
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchInput {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.searchInput:focus {
+  width: 280px;
+  background-color: #ffffff;
+  border-color: #bbb;
+}
+
+.searchInputSmallMenu {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.searchInputSmallMenu:focus {
+  width: 280px;
+  background-color: #ffffff;
+  border-color: #bbb;
+}
+
+.menuButton {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #4a4a4a;
+}
+
+.desktopMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.desktopMenu a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.desktopMenu a:hover {
+  color: #0070f3;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-color: white;
+  width: 70%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-top: 1px solid #eaeaea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileLogo {
+  border-bottom: 1px solid #efe5e5;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  height: 47px;
+  align-items: center;
+}
+.mobileLogoAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileLogoAction span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: #4a4a4a;
+  padding: 10px 0;
+}
+
+.mobileMenu a:hover {
+  color: #0070f3;
+}
+.title {
+  color: #0070f3;
+}
+@media (max-width: 950px) {
+  .menuButton {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .searchInput {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+    position: fixed;
+    top: 0;
+  }
+}

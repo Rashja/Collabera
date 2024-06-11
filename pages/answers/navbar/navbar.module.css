@@ -1,0 +1,8 @@
+.navbarContainer {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
