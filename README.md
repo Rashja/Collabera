@@ -20,7 +20,6 @@ Follow the steps below to set up and run the project.
    ```bash
    docker compose up
    ```
-5. **Run the Docker Containers**
    #### Open your browser and go to http://localhost:3000 to see the solutions guide.
 
 ## Running Tests
